@@ -1,0 +1,86 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "20224110620305",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "Date",
+  "entityIdParts": [
+    "2818858856670508224"
+  ],
+  "displayNamePropertyId": "2669739435760063551",
+  "namespaceType": "Imported",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "2669739435760063551",
+      "name": "Date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime"
+    },
+    {
+      "id": "2818858856670508224",
+      "name": "date_key",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2669739497090072566",
+      "name": "Year",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2669739533536490650",
+      "name": "Quarter",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2669739555776001496",
+      "name": "Month_Name",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2669739606500529349",
+      "name": "Week_of_Year",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2669739651592651147",
+      "name": "Day_of_Week",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2831000000000000004",
+      "name": "Month_Number",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    }
+  ],
+  "timeseriesProperties": [],
+  "semanticEnrichment": {
+    "synonyms": [
+      "calendar date",
+      "day",
+      "reporting date",
+      "performance date"
+    ],
+    "description": "Calendar date used to trend marketing performance and evaluate operating rules over time.",
+    "customAttributes": {
+      "domain": "Automotive Marketing",
+      "grain": "One row per calendar date"
+    }
+  },
+  "untypedProperties": []
+}

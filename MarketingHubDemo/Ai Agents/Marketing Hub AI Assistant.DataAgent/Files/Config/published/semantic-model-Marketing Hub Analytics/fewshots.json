@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/fewShots/1.0.0/schema.json",
+  "fewShots": [
+    {
+      "id": "817e17ac-79f1-44a7-9e11-ce55851899bd",
+      "question": "Which campaigns generated the most revenue and what was their ROAS?",
+      "query": "EVALUATE TOPN(10, SUMMARIZECOLUMNS('Campaign'[Campaign Name], \"Revenue\", [Total Revenue], \"Spend\", [Total Spend], \"ROAS\", [Return on Ad Spend]), [Revenue], DESC)"
+    },
+    {
+      "id": "b3b4acb3-4606-410d-90a5-0c901398d23b",
+      "question": "Compare spend, leads, CPL, and conversion rate by marketing platform.",
+      "query": "EVALUATE SUMMARIZECOLUMNS('Channel'[Platform], \"Spend\", [Total Spend], \"Leads\", [Total Leads], \"CPL\", [Cost per Lead], \"Conversion Rate\", [Conversion Rate]) ORDER BY [Spend] DESC"
+    },
+    {
+      "id": "54cf48f0-569f-4bc4-8ff1-6bcf229b5816",
+      "question": "Show monthly impressions, clicks, CTR, CPC, and revenue.",
+      "query": "EVALUATE SUMMARIZECOLUMNS('Date'[Year], 'Date'[Month Number], 'Date'[Month], \"Impressions\", [Total Impressions], \"Clicks\", [Total Clicks], \"CTR\", [Click-Through Rate], \"CPC\", [Cost per Click], \"Revenue\", [Total Revenue]) ORDER BY 'Date'[Year], 'Date'[Month Number]"
+    }
+  ]
+}

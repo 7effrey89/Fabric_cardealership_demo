@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Dataflow",
+    "displayName": "DF_Api_to_BronzeTable",
+    "description": "Dataflow Gen2: public DummyJSON product catalog to Bronze Lakehouse."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1e746d78-b039-82bb-4cbc-16ecb3268452"
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "channel-detail",
+  "position": {
+    "x": 30,
+    "y": 445,
+    "z": 6000,
+    "height": 250,
+    "width": 1220,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Channel"
+                    }
+                  },
+                  "Property": "Platform"
+                }
+              },
+              "queryRef": "Channel.Platform"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Channel"
+                    }
+                  },
+                  "Property": "Channel"
+                }
+              },
+              "queryRef": "Channel.Channel"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Campaign"
+                    }
+                  },
+                  "Property": "Campaign"
+                }
+              },
+              "queryRef": "Campaign.Campaign"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Marketing Performance"
+                    }
+                  },
+                  "Property": "Total Impressions"
+                }
+              },
+              "queryRef": "Marketing Performance.Total Impressions"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Marketing Performance"
+                    }
+                  },
+                  "Property": "Click-Through Rate"
+                }
+              },
+              "queryRef": "Marketing Performance.Click-Through Rate"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Marketing Performance"
+                    }
+                  },
+                  "Property": "Total Leads"
+                }
+              },
+              "queryRef": "Marketing Performance.Total Leads"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Marketing Performance"
+                    }
+                  },
+                  "Property": "Cost per Lead"
+                }
+              },
+              "queryRef": "Marketing Performance.Cost per Lead"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Marketing Performance"
+                    }
+                  },
+                  "Property": "Return on Ad Spend"
+                }
+              },
+              "queryRef": "Marketing Performance.Return on Ad Spend"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Marketing Performance"
+                  }
+                },
+                "Property": "Return on Ad Spend"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b6c479738432383dd067",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Channel"
+              }
+            },
+            "Property": "Platform"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0261f5ec059898ee7815",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Channel"
+              }
+            },
+            "Property": "Channel"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e29f2eaf29ce956f5a6b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Campaign"
+              }
+            },
+            "Property": "Campaign"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "53c9a7c67215e40ab835",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Marketing Performance"
+              }
+            },
+            "Property": "Total Impressions"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b4e58660ac872f9c285c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Marketing Performance"
+              }
+            },
+            "Property": "Click-Through Rate"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ccff5d7dcf62078c9d85",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Marketing Performance"
+              }
+            },
+            "Property": "Total Leads"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "906b1398553b429da64b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Marketing Performance"
+              }
+            },
+            "Property": "Cost per Lead"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d999dbd988ba175b901a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Marketing Performance"
+              }
+            },
+            "Property": "Return on Ad Spend"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  },
+  "howCreated": "Copilot"
+}

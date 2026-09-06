@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "89a1b132-e158-414a-8414-475e4fc04271",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "source_system",
+        "targetPropertyId": "2669739950717711361"
+      },
+      {
+        "sourceColumnName": "channel",
+        "targetPropertyId": "2669739978994727631"
+      },
+      {
+        "sourceColumnName": "channel_key",
+        "targetPropertyId": "2822494768225571868"
+      },
+      {
+        "sourceColumnName": "source_system",
+        "targetPropertyId": "2823294034531073843"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "36ca5241-d4d7-8ef9-4c7d-648ba501d02a",
+      "sourceTableName": "dim_channel",
+      "sourceSchema": "dimensions"
+    }
+  }
+}

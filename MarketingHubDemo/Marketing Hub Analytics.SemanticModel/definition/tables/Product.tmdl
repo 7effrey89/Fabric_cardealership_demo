@@ -1,0 +1,55 @@
+/// Automotive product dimension derived from product identifiers in advertising signals and enriched with synthetic vehicle catalog attributes.
+table Product
+
+	/// Product identifier used to relate marketing performance to a catalog item.
+	column 'Product Key'
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: product_key
+
+	/// Display name of the promoted vehicle model.
+	column Product
+		dataType: string
+		summarizeBy: none
+		sourceColumn: product_name
+
+	/// Synthetic automotive brand used to demonstrate vehicle-brand marketing analysis.
+	column Brand
+		dataType: string
+		summarizeBy: none
+		sourceColumn: brand
+
+	/// Vehicle category, such as Electric SUV, Sedan, Crossover, Sports Car, or Pickup Truck.
+	column Category
+		dataType: string
+		summarizeBy: none
+		sourceColumn: category
+
+	/// Optional list price; blank when it is not supplied by an advertising source.
+	column 'List Price'
+		dataType: decimal
+		formatString: $#,##0.00
+		summarizeBy: none
+		sourceColumn: list_price
+
+	/// Optional rating; blank when it is not supplied by an advertising source.
+	column Rating
+		dataType: decimal
+		formatString: 0.00
+		summarizeBy: none
+		sourceColumn: rating
+
+	/// Indicates that product availability is not sourced in this demo.
+	column 'Availability Status'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: availability_status
+
+	partition Product = entity
+		mode: directLake
+		source
+			entityName: dim_product
+			schemaName: dimensions
+			expressionSource: 'DirectLake - Marketing Hub'
+

@@ -1,0 +1,16 @@
+relationship 'Marketing Performance to Date'
+	fromColumn: 'Marketing Performance'.'Date Key'
+	toColumn: Date.'Date Key'
+
+relationship 'Marketing Performance to Channel'
+	fromColumn: 'Marketing Performance'.'Channel Key'
+	toColumn: Channel.'Channel Key'
+
+relationship 'Marketing Performance to Campaign'
+	fromColumn: 'Marketing Performance'.'Campaign Key'
+	toColumn: Campaign.'Campaign Key'
+
+relationship 'Marketing Performance to Product'
+	fromColumn: 'Marketing Performance'.'Product Key'
+	toColumn: Product.'Product Key'
+

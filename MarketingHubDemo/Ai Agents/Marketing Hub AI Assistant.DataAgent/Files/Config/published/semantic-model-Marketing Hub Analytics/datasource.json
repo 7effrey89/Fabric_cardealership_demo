@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "0861941f-4f16-b6d7-4886-b1d850b35af5",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": "Use the semantic model's explicit measures. Date filters come from Date; platform and channel filters come from Channel; campaign names and objectives come from Campaign; product attributes come from Product.",
+  "displayName": "Marketing Hub Analytics",
+  "type": "semantic_model",
+  "userDescription": "Direct Lake marketing star schema with campaign, channel, product, and calendar dimensions plus governed marketing KPI measures.",
+  "metadata": null,
+  "elements": [
+    {
+      "id": "76f39fab-809d-4757-a4e0-e81cdf5fa1ba",
+      "is_selected": true,
+      "display_name": "Date",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": []
+    },
+    {
+      "id": "027029e5-b651-4eba-b031-0b1775ce59c9",
+      "is_selected": true,
+      "display_name": "Channel",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": []
+    },
+    {
+      "id": "82e480ae-9e63-46fa-96fd-88cb400bb5be",
+      "is_selected": true,
+      "display_name": "Campaign",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": []
+    },
+    {
+      "id": "f58e2497-61e5-4e16-a126-8b5259e21caf",
+      "is_selected": true,
+      "display_name": "Product",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": []
+    },
+    {
+      "id": "2265d193-7df0-44dc-91d4-2d9633d27bb0",
+      "is_selected": true,
+      "display_name": "Marketing Performance",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": []
+    }
+  ]
+}

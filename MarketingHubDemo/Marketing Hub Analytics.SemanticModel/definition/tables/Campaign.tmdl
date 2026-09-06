@@ -1,0 +1,29 @@
+/// Campaign dimension containing the named marketing initiatives and their business objectives.
+table Campaign
+
+	/// Stable campaign identifier used to relate performance to a campaign.
+	column 'Campaign Key'
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: campaign_key
+
+	/// Business-facing campaign name used in reports and natural-language questions.
+	column Campaign
+		dataType: string
+		summarizeBy: none
+		sourceColumn: campaign_name
+
+	/// Primary marketing objective, such as awareness, consideration, or lead generation.
+	column 'Campaign Objective'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: campaign_objective
+
+	partition Campaign = entity
+		mode: directLake
+		source
+			entityName: dim_campaign
+			schemaName: dimensions
+			expressionSource: 'DirectLake - Marketing Hub'
+

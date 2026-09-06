@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "Demo_Insert_Synthetic_Marketing_Movement",
+    "description": "Demo notebook with editable clicks and date_key parameters that appends a synthetic row to the Gold marketing-performance fact table for movement and Fabric Activator demonstrations."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "757181b7-34f2-b317-419c-23fb30bd33fe"
+  }
+}

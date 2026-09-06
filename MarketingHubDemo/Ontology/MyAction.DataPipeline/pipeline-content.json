@@ -1,0 +1,49 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "Office365Email1",
+        "type": "Office365Email",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "to": "jeffrey_pro@hotmail.com",
+          "subject": "SemlerDemo",
+          "body": "<p>Triggered by pipeline: </p>\n<p>text variable@{variables('TextVariable')}</p>"
+        },
+        "externalReferences": {
+          "connection": "b5230830-c20e-4110-931c-97bd3ebaa6a7"
+        }
+      },
+      {
+        "name": "Web1",
+        "type": "WebActivity",
+        "state": "Inactive",
+        "onInactiveMarkAs": "Succeeded",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "headers": {}
+        }
+      }
+    ],
+    "variables": {
+      "TextVariable": {
+        "type": "String",
+        "defaultValue": "hi"
+      }
+    }
+  }
+}

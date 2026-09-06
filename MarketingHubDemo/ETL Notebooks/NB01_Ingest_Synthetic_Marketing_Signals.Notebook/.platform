@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "NB01_Ingest_Synthetic_Marketing_Signals",
+    "description": "Generates raw GA, Meta, and LinkedIn-like marketing signals in the Bronze lakehouse."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "146f86f1-16f1-9f1b-4f1b-c54e87afacde"
+  }
+}

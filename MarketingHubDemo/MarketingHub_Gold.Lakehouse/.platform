@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "MarketingHub_Gold",
+    "description": "Schema-enabled Gold Lakehouse with dimensions, facts, and data products."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "36ca5241-d4d7-8ef9-4c7d-648ba501d02a"
+  }
+}

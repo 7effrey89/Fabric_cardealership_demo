@@ -1,0 +1,59 @@
+{
+  "properties": {
+    "jobMode": "Batch",
+    "source": {
+      "type": "Binary",
+      "connectionSettings": {
+        "type": "HttpServer",
+        "externalReferences": {
+          "connection": "e4c71f62-4ac4-4c4e-888d-87b48b464615"
+        }
+      }
+    },
+    "destination": {
+      "type": "Binary",
+      "connectionSettings": {
+        "type": "Lakehouse",
+        "typeProperties": {
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "artifactId": "46e3ae82-aaf2-9046-47d5-1f64535f34b5",
+          "rootFolder": "Files"
+        }
+      }
+    },
+    "policy": {
+      "timeout": "0.12:00:00",
+      "retry": 0
+    }
+  },
+  "activities": [
+    {
+      "id": "f3ff8c94-a8a3-45bb-835b-c2ca4b2417d5",
+      "properties": {
+        "source": {
+          "datasetSettings": {
+            "location": {
+              "type": "HttpServerLocation"
+            }
+          },
+          "storeSettings": {
+            "requestMethod": "GET"
+          }
+        },
+        "destination": {
+          "datasetSettings": {
+            "location": {
+              "type": "LakehouseLocation",
+              "fileName": "dump001.json",
+              "folderPath": "myDummyAPIstore"
+            }
+          },
+          "storeSettings": {
+            "copyBehavior": "PreserveHierarchy"
+          }
+        },
+        "enableStaging": false
+      }
+    }
+  ]
+}

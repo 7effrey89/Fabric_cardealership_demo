@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Ontology",
+    "displayName": "Marketing_Hub_Ontology",
+    "description": "Automotive marketing operations ontology connecting dates, media channels, campaigns, vehicle models, and daily performance with governed Gold Lakehouse bindings."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b86c418d-b6c7-a3f5-48b0-a6f68c70de19"
+  }
+}

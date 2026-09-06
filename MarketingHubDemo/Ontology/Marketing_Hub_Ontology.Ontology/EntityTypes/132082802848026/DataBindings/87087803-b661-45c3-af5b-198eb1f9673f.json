@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "87087803-b661-45c3-af5b-198eb1f9673f",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "product_name",
+        "targetPropertyId": "2669740133933305699"
+      },
+      {
+        "sourceColumnName": "brand",
+        "targetPropertyId": "2669740157912906199"
+      },
+      {
+        "sourceColumnName": "category",
+        "targetPropertyId": "2669740177938647344"
+      },
+      {
+        "sourceColumnName": "list_price",
+        "targetPropertyId": "2669740202884989090"
+      },
+      {
+        "sourceColumnName": "rating",
+        "targetPropertyId": "2669740247808045927"
+      },
+      {
+        "sourceColumnName": "availability_status",
+        "targetPropertyId": "2669740273725047566"
+      },
+      {
+        "sourceColumnName": "product_key",
+        "targetPropertyId": "2826389055456997042"
+      },
+      {
+        "sourceColumnName": "product_name",
+        "targetPropertyId": "2827544080182367872"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "36ca5241-d4d7-8ef9-4c7d-648ba501d02a",
+      "sourceTableName": "dim_product",
+      "sourceSchema": "dimensions"
+    }
+  }
+}

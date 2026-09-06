@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "MLModel",
+    "displayName": "S_AutoML-AutoMLModel"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3a107ce6-0dc8-a011-473d-62d08b182ae1"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "d266d0c4-6b3f-45e2-9a2c-8760dd11301d",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "date_key",
+        "targetPropertyId": "2833000000000000001"
+      },
+      {
+        "sourceColumnName": "channel_key",
+        "targetPropertyId": "2833000000000000002"
+      },
+      {
+        "sourceColumnName": "campaign_key",
+        "targetPropertyId": "2833000000000000003"
+      },
+      {
+        "sourceColumnName": "product_key",
+        "targetPropertyId": "2833000000000000004"
+      },
+      {
+        "sourceColumnName": "region",
+        "targetPropertyId": "2669740363705708617"
+      },
+      {
+        "sourceColumnName": "device_category",
+        "targetPropertyId": "2669740388653771949"
+      },
+      {
+        "sourceColumnName": "video_views",
+        "targetPropertyId": "2669740433589418041"
+      },
+      {
+        "sourceColumnName": "engagements",
+        "targetPropertyId": "2669740480311919130"
+      },
+      {
+        "sourceColumnName": "impressions",
+        "targetPropertyId": "2669740533980734769"
+      },
+      {
+        "sourceColumnName": "clicks",
+        "targetPropertyId": "2669740584521757974"
+      },
+      {
+        "sourceColumnName": "sessions",
+        "targetPropertyId": "2669740632290087797"
+      },
+      {
+        "sourceColumnName": "spend",
+        "targetPropertyId": "2669740677912741440"
+      },
+      {
+        "sourceColumnName": "revenue",
+        "targetPropertyId": "2669740725271734946"
+      },
+      {
+        "sourceColumnName": "conversions",
+        "targetPropertyId": "2669740772988916066"
+      },
+      {
+        "sourceColumnName": "leads",
+        "targetPropertyId": "2669740816155111511"
+      },
+      {
+        "sourceColumnName": "click_through_rate",
+        "targetPropertyId": "2669740861857952634"
+      },
+      {
+        "sourceColumnName": "cost_per_click",
+        "targetPropertyId": "2669740951256152373"
+      },
+      {
+        "sourceColumnName": "return_on_ad_spend",
+        "targetPropertyId": "2669741044340879921"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "36ca5241-d4d7-8ef9-4c7d-648ba501d02a",
+      "sourceTableName": "fct_marketing_performance",
+      "sourceSchema": "facts"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "59480075118916",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "Channel",
+  "entityIdParts": [
+    "2822494768225571868"
+  ],
+  "displayNamePropertyId": "2669739978994727631",
+  "namespaceType": "Imported",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "2669739950717711361",
+      "name": "Platform",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2669739978994727631",
+      "name": "Channel",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2822494768225571868",
+      "name": "channel_key",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2823294034531073843",
+      "name": "source_system",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": [],
+  "semanticEnrichment": {
+    "synonyms": [
+      "media channel",
+      "advertising channel",
+      "platform",
+      "traffic source"
+    ],
+    "description": "Advertising delivery channel and source platform used to compare spend, reach, conversion, and return.",
+    "customAttributes": {
+      "domain": "Automotive Marketing",
+      "grain": "One row per channel and source system"
+    }
+  },
+  "untypedProperties": []
+}

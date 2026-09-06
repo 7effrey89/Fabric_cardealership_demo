@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "1a6f6516-ee98-4324-90f4-49d8a6ba2ae4",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "36ca5241-d4d7-8ef9-4c7d-648ba501d02a",
+    "sourceTableName": "fct_marketing_performance",
+    "sourceSchema": "facts",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "date_key",
+      "targetPropertyId": "2833000000000000001"
+    },
+    {
+      "sourceColumnName": "channel_key",
+      "targetPropertyId": "2833000000000000002"
+    },
+    {
+      "sourceColumnName": "campaign_key",
+      "targetPropertyId": "2833000000000000003"
+    },
+    {
+      "sourceColumnName": "product_key",
+      "targetPropertyId": "2833000000000000004"
+    },
+    {
+      "sourceColumnName": "region",
+      "targetPropertyId": "2669740363705708617"
+    },
+    {
+      "sourceColumnName": "device_category",
+      "targetPropertyId": "2669740388653771949"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "product_key",
+      "targetPropertyId": "2826389055456997042"
+    }
+  ]
+}

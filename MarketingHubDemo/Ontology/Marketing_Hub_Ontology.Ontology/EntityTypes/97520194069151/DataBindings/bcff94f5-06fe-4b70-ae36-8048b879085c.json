@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "bcff94f5-06fe-4b70-ae36-8048b879085c",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "campaign_name",
+        "targetPropertyId": "2669740039942612581"
+      },
+      {
+        "sourceColumnName": "campaign_objective",
+        "targetPropertyId": "2669740061146481454"
+      },
+      {
+        "sourceColumnName": "campaign_id",
+        "targetPropertyId": "2824237420871017387"
+      },
+      {
+        "sourceColumnName": "campaign_name",
+        "targetPropertyId": "2825124094544998270"
+      },
+      {
+        "sourceColumnName": "campaign_key",
+        "targetPropertyId": "2832000000000000001"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "36ca5241-d4d7-8ef9-4c7d-648ba501d02a",
+      "sourceTableName": "dim_campaign",
+      "sourceSchema": "dimensions"
+    }
+  }
+}

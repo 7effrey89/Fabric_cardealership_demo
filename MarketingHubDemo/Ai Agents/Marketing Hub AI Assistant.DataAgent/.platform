@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataAgent",
+    "displayName": "Marketing Hub AI Assistant",
+    "description": "Conversational marketing performance assistant for campaign, channel, spend, conversion, CPL, CPC, and ROAS analysis."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b9a52663-7d16-ae6f-4dda-aa27002e8b3e"
+  }
+}

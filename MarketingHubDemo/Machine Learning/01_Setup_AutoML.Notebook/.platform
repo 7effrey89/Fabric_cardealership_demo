@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "01_Setup_AutoML"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "20ffd8e4-f07b-8d9b-4a57-7c6a6b3e7cc4"
+  }
+}

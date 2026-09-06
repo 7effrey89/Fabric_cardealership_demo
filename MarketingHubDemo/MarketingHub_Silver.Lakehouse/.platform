@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "MarketingHub_Silver",
+    "description": "Schema-enabled Silver Lakehouse with conformed, reference, and audit tables."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5974f0c2-943f-bf33-4427-0fa88fe17275"
+  }
+}

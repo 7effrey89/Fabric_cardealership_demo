@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "9ff012d0-527f-4450-9380-dc64ccc6b3fa",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "date",
+        "targetPropertyId": "2669739435760063551"
+      },
+      {
+        "sourceColumnName": "date_key",
+        "targetPropertyId": "2818858856670508224"
+      },
+      {
+        "sourceColumnName": "year",
+        "targetPropertyId": "2669739497090072566"
+      },
+      {
+        "sourceColumnName": "quarter",
+        "targetPropertyId": "2669739533536490650"
+      },
+      {
+        "sourceColumnName": "month_name",
+        "targetPropertyId": "2669739555776001496"
+      },
+      {
+        "sourceColumnName": "month_number",
+        "targetPropertyId": "2831000000000000004"
+      },
+      {
+        "sourceColumnName": "week_of_year",
+        "targetPropertyId": "2669739606500529349"
+      },
+      {
+        "sourceColumnName": "day_of_week",
+        "targetPropertyId": "2669739651592651147"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "36ca5241-d4d7-8ef9-4c7d-648ba501d02a",
+      "sourceTableName": "dim_date",
+      "sourceSchema": "dimensions"
+    }
+  }
+}

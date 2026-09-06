@@ -1,0 +1,32 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "DFG2_Public_Product_Catalog_To_Bronze",
+  "documentLocale": "en-us",
+  "queriesMetadata": {
+    "api_products_raw": {
+      "queryId": "57a6ed3a-e3e2-4dbf-b02d-75b0422d478a",
+      "queryName": "api_products_raw",
+      "loadEnabled": false
+    },
+    "api_products_raw_DataDestination": {
+      "queryId": "bec00928-d1a1-49c9-9d2d-aea442dcf0a9",
+      "queryName": "api_products_raw_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "https://dummyjson.com/products?limit=100",
+      "kind": "Web",
+      "connectionId": "{\"DatasourceId\":\"dbe28178-c850-483c-8000-33283a25bc74\",\"ClusterId\":\"36509f0c-e5f2-4498-b8b1-8dc507605638\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"36509f0c-e5f2-4498-b8b1-8dc507605638\",\"DatasourceId\":\"88a42819-d4be-4740-9afb-4926d0bde09f\"}"
+    }
+  ],
+  "allowNativeQueries": false
+}

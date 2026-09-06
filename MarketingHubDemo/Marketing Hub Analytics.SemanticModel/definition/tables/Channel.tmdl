@@ -1,0 +1,29 @@
+/// Marketing channel dimension that distinguishes platform and traffic-channel combinations.
+table Channel
+
+	/// Stable integer key for the platform and channel combination.
+	column 'Channel Key'
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: channel_key
+
+	/// Source platform that produced the signal, such as Google Ads or Meta Ads.
+	column Platform
+		dataType: string
+		summarizeBy: none
+		sourceColumn: source_system
+
+	/// Business channel classification used to compare acquisition strategies.
+	column Channel
+		dataType: string
+		summarizeBy: none
+		sourceColumn: channel
+
+	partition Channel = entity
+		mode: directLake
+		source
+			entityName: dim_channel
+			schemaName: dimensions
+			expressionSource: 'DirectLake - Marketing Hub'
+

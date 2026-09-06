@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "NB02_Bronze_To_Silver_Lakehouse",
+    "description": "Conforms source-specific Bronze marketing tables into schema-organized Silver Lakehouse tables."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "aa4dfdb9-e8c5-8cc1-4e37-823cffecef08"
+  }
+}

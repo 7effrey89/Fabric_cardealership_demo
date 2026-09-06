@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "NB03_Silver_To_Gold_Marketing_Model",
+    "description": "Builds Gold fact, dimensions, and campaign performance data product tables."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4c42bb59-8fe7-8f2f-4a11-5cf95d83cec2"
+  }
+}

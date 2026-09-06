@@ -1,0 +1,88 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "132082802848026",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "Product",
+  "entityIdParts": [
+    "2826389055456997042"
+  ],
+  "displayNamePropertyId": "2827544080182367872",
+  "namespaceType": "Imported",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "2669740133933305699",
+      "name": "Product",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2669740157912906199",
+      "name": "Brand",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2669740177938647344",
+      "name": "Category",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2669740202884989090",
+      "name": "List_Price",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double"
+    },
+    {
+      "id": "2669740247808045927",
+      "name": "Rating",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double"
+    },
+    {
+      "id": "2669740273725047566",
+      "name": "Availability_Status",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2826389055456997042",
+      "name": "product_key",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2827544080182367872",
+      "name": "Product_Name",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": [],
+  "semanticEnrichment": {
+    "synonyms": [
+      "vehicle",
+      "vehicle model",
+      "automobile",
+      "car",
+      "promoted model"
+    ],
+    "description": "Automotive vehicle model promoted by marketing activity, classified by manufacturer brand and vehicle category.",
+    "customAttributes": {
+      "domain": "Automotive Marketing",
+      "grain": "One row per vehicle model",
+      "categoryValues": "Electric SUV, Sedan, Crossover, Sports Car, Pickup Truck"
+    }
+  },
+  "untypedProperties": []
+}

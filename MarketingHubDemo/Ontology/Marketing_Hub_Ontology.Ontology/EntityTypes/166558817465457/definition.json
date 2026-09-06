@@ -1,0 +1,178 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "166558817465457",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "Marketing_Performance",
+  "entityIdParts": [
+    "2833000000000000001",
+    "2833000000000000002",
+    "2833000000000000003",
+    "2833000000000000004",
+    "2669740363705708617",
+    "2669740388653771949"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Imported",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "2669740363705708617",
+      "name": "Region",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2669740388653771949",
+      "name": "Device_Category",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2669740433589418041",
+      "name": "Video_Views",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2669740480311919130",
+      "name": "Engagements",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2669740533980734769",
+      "name": "Total_Impressions",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2669740584521757974",
+      "name": "Total_Clicks",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2669740632290087797",
+      "name": "Total_Sessions",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2669740677912741440",
+      "name": "Total_Spend",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double"
+    },
+    {
+      "id": "2669740725271734946",
+      "name": "Total_Revenue",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double"
+    },
+    {
+      "id": "2669740772988916066",
+      "name": "Total_Conversions",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2669740816155111511",
+      "name": "Total_Leads",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2669740861857952634",
+      "name": "Click-Through_Rate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double"
+    },
+    {
+      "id": "2669740905318312732",
+      "name": "Conversion_Rate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double"
+    },
+    {
+      "id": "2669740951256152373",
+      "name": "Cost_per_Click",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double"
+    },
+    {
+      "id": "2669740998250938710",
+      "name": "Cost_per_Lead",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double"
+    },
+    {
+      "id": "2669741044340879921",
+      "name": "Return_on_Ad_Spend",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double"
+    },
+    {
+      "id": "2833000000000000001",
+      "name": "date_key",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2833000000000000002",
+      "name": "channel_key",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2833000000000000003",
+      "name": "campaign_key",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2833000000000000004",
+      "name": "product_key",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    }
+  ],
+  "timeseriesProperties": [],
+  "semanticEnrichment": {
+    "synonyms": [
+      "marketing signal",
+      "campaign performance",
+      "media performance",
+      "daily performance",
+      "marketing KPI"
+    ],
+    "description": "Daily automotive marketing performance at date, channel, campaign, vehicle model, region, and device grain. Aggregate counts and currency first, then calculate rates from the aggregates.",
+    "customAttributes": {
+      "domain": "Automotive Marketing Operations",
+      "grain": "Date, channel, campaign, vehicle model, region, and device",
+      "currency": "USD",
+      "rateGuidance": "CTR=clicks/impressions; conversion rate=conversions/sessions; CPC=spend/clicks; CPL=spend/leads; ROAS=revenue/spend"
+    }
+  },
+  "untypedProperties": []
+}

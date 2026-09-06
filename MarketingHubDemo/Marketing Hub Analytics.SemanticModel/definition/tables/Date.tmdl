@@ -1,0 +1,77 @@
+/// Calendar dimension spanning every day represented in marketing performance data.
+table Date
+	dataCategory: time
+
+	/// Numeric calendar key used to relate each performance row to one date.
+	column 'Date Key'
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: date_key
+
+	/// Calendar date used for filtering and time-based analysis.
+	column Date
+		dataType: dateTime
+		formatString: Short Date
+		summarizeBy: none
+		sourceColumn: date
+
+	/// Four-digit calendar year.
+	column Year
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: year
+
+	/// Calendar quarter label such as Q1.
+	column Quarter
+		dataType: string
+		summarizeBy: none
+		sourceColumn: quarter
+
+	/// Numeric month used to sort month names chronologically.
+	column 'Month Number'
+		dataType: int64
+		isHidden
+		summarizeBy: none
+		sourceColumn: month_number
+
+	/// Full calendar month name sorted by month number.
+	column 'Month Name'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: month_name
+		sortByColumn: 'Month Number'
+
+	/// ISO-style week number within the calendar year.
+	column 'Week of Year'
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: week_of_year
+
+	/// Full weekday name for day-of-week comparisons.
+	column 'Day of Week'
+		dataType: string
+		summarizeBy: none
+		sourceColumn: day_of_week
+
+	hierarchy Calendar
+
+		level Year
+			column: Year
+
+		level Quarter
+			column: Quarter
+
+		level Month
+			column: 'Month Name'
+
+		level Date
+			column: Date
+
+	partition Date = entity
+		mode: directLake
+		source
+			entityName: dim_date
+			schemaName: dimensions
+			expressionSource: 'DirectLake - Marketing Hub'
+

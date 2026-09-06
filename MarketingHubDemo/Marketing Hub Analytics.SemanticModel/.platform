@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Marketing Hub Analytics",
+    "description": "Direct Lake semantic model for campaign, channel, product, conversion, spend, revenue, and ROAS analysis."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0861941f-4f16-b6d7-4886-b1d850b35af5"
+  }
+}

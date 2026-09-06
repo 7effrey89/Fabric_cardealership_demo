@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "MarketingHub_Bronze",
+    "description": "Raw API responses and synthetic digital marketing signals with ingestion metadata."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "46e3ae82-aaf2-9046-47d5-1f64535f34b5"
+  }
+}

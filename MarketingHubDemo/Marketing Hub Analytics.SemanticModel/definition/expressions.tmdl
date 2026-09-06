@@ -1,0 +1,6 @@
+expression 'DirectLake - Marketing Hub' =
+		let
+			Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/69eb0045-4ad5-4d4f-b8e1-bd8076532719/a501d02a-648b-4c7d-8ef9-d4d736ca5241", [HierarchicalNavigation=true])
+		in
+			Source
+

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "2670059710874434477",
+  "name": "Marketing_Performance_has_Product",
+  "namespaceType": "Imported",
+  "source": {
+    "entityTypeId": "166558817465457"
+  },
+  "target": {
+    "entityTypeId": "132082802848026"
+  }
+}

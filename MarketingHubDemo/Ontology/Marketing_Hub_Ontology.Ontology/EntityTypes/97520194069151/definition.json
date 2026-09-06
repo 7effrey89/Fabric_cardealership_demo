@@ -1,0 +1,65 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "97520194069151",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "Campaign",
+  "entityIdParts": [
+    "2832000000000000001"
+  ],
+  "displayNamePropertyId": "2825124094544998270",
+  "namespaceType": "Imported",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "2669740039942612581",
+      "name": "Campaign",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2669740061146481454",
+      "name": "Campaign_Objective",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2824237420871017387",
+      "name": "campaign_id",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "2825124094544998270",
+      "name": "campaign_name",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2832000000000000001",
+      "name": "campaign_key",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    }
+  ],
+  "timeseriesProperties": [],
+  "semanticEnrichment": {
+    "synonyms": [
+      "marketing campaign",
+      "media campaign",
+      "activation",
+      "initiative"
+    ],
+    "description": "A marketing initiative with a business objective, analyzed across channels, vehicle models, markets, and dates.",
+    "customAttributes": {
+      "domain": "Automotive Marketing",
+      "grain": "One row per unique campaign variant"
+    }
+  },
+  "untypedProperties": []
+}

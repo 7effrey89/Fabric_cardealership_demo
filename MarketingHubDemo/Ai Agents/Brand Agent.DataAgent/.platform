@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataAgent",
+    "displayName": "Brand Agent",
+    "description": "He knows nothing"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "64d391c5-9278-8f21-481b-a92264de9715"
+  }
+}

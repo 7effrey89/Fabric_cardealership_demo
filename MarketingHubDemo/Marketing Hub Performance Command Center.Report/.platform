@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Marketing Hub Performance Command Center",
+    "description": "Executive marketing performance dashboard with investment, revenue, ROAS, conversion, channel, and campaign diagnostics."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d9869c32-346f-bd66-46a6-c44f6b5df91f"
+  }
+}
